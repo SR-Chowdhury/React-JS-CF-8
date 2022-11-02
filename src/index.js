@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+
+// Core React JS: Chapter Eight - Input Elements & Forms
+// import App from './input-forms/app';
+
+// Core React JS: Chapter Eight - Checkbox & Radio Button
+// import App from './checkbox-radio/app';
+
+// Core React JS: Chapter Eight - Advance Checkbox & Array
+// import App from './checkbox-array/app';
+
+// Core React JS: Chapter Eight - Uncontrolled form
+import App from './uncontrolled-form/app';
+
+// Core React JS: Chapter Eight - Controlled form
+// import App from './controlled-form/app';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 
