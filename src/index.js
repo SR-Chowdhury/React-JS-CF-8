@@ -14,7 +14,10 @@ import ReactDOM from 'react-dom/client';
 // import App from './uncontrolled-form/app';
 
 // Core React JS: Chapter Eight - Controlled form
-import App from './controlled-form/app';
+// import App from './controlled-form/app';
+
+// Core React JS: Chapter Eight - Split form into multiple components
+import App from './split-form/app';
 
 import reportWebVitals from './reportWebVitals';
 
