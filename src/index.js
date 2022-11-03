@@ -11,10 +11,10 @@ import ReactDOM from 'react-dom/client';
 // import App from './checkbox-array/app';
 
 // Core React JS: Chapter Eight - Uncontrolled form
-import App from './uncontrolled-form/app';
+// import App from './uncontrolled-form/app';
 
 // Core React JS: Chapter Eight - Controlled form
-// import App from './controlled-form/app';
+import App from './controlled-form/app';
 
 import reportWebVitals from './reportWebVitals';
 
