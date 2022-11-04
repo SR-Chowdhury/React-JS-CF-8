@@ -17,7 +17,13 @@ import ReactDOM from 'react-dom/client';
 // import App from './controlled-form/app';
 
 // Core React JS: Chapter Eight - Split form into multiple components
-import App from './split-form/app';
+// import App from './split-form/app';
+
+// Core React JS: Chapter Eight - Sign up Form
+// import App from './sign-up-form/app';
+
+// Core React JS: Chapter Eight - Sign up Form with Validation
+import App from './sign-up-form-validation/app';
 
 import reportWebVitals from './reportWebVitals';
 
