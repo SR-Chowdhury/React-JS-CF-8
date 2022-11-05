@@ -1,5 +1,6 @@
 import React from "react";
 import Form from "./form";
+import PropTypes from 'prop-types';
 
 const initValue = {
     name: '',
@@ -38,7 +39,8 @@ class SignUpFormValidation extends React.Component {
         // console.log("errors: ", errors);
         // console.log("isValid: ", isValid);
         if(isValid) {
-            console.log(this.state.values);
+            // console.log(this.state.values);
+            this.props.createUser(this.state.values);
             event.target.reset();
             this.setState({values: initValue, agreement: false, errors: {} });
         } else {
@@ -76,24 +78,22 @@ class SignUpFormValidation extends React.Component {
     render () {
 
         return (
-            <div className="container">
-                <h1 className="text-center my-4">Bismillah, Core React JS: Chapter Eight - Sign up Form with Validation</h1>
-                <div className="row">
-                    <div className="col-6">
-                        <Form
-                            values={this.state.values}
-                            agreement = {this.state.agreement}
-                            errors = {this.state.errors}
-                            handleChange = {this.handleChange}
-                            handleAgreement = {this.handleAgreement}
-                            handleSubmit = {this.handleSubmit}
-                        />
-                    </div>
-                </div>
-            </div>
+
+            <Form
+                values={this.state.values}
+                agreement = {this.state.agreement}
+                errors = {this.state.errors}
+                handleChange = {this.handleChange}
+                handleAgreement = {this.handleAgreement}
+                handleSubmit = {this.handleSubmit}
+            />
         );
     }
 
+}
+
+SignUpFormValidation.propTypes = {
+    createUser: PropTypes.func.isRequired
 }
 
 export default SignUpFormValidation;
